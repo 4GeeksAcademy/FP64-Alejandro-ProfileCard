@@ -6,7 +6,7 @@ const num1 = document.querySelector('#num1');
     let num3Value = 0;
     const boton = document.querySelector('#boton');
 
-        // Contador de creditos
+    
     let ingreso = prompt('¿Cuanto dinero juegas?');
 
     const creditos = document.querySelector('#creditos');
@@ -14,7 +14,7 @@ const num1 = document.querySelector('#num1');
     let activo = true;
 
 
-    // Funciones
+   
     function apuesta(cantidad) {
         const ingresado = parseFloat(cantidad);
         creditos.textContent = cantidad;
@@ -55,10 +55,10 @@ const num1 = document.querySelector('#num1');
 
     function suerte() {
         if (activo) {
-            // Se suma el dinero
+            
             sumarDinero();
         } else {
-            // Se resta el dinero
+            
             restarDinero();
         }
         if (cuenta === 0) {
@@ -76,5 +76,5 @@ const num1 = document.querySelector('#num1');
         console.log(''.concat(num1Value, num2Value, num3Value,' - ', activo, ' ---> cuenta: ',cuenta));
     }
 
-    // Eventos
+   
     boton.addEventListener('click', jugar);
